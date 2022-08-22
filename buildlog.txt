@@ -11,7 +11,7 @@ Memory Map
 Default-segment:
   $0801-$080c Basic
   $080e-$080d Basic End
-  $0810-$0820 Main Code
+  $0810-$08b5 Main Code
   $2000-$203f Sprite 128
 
 Writing Vice symbol file: example2.vs
