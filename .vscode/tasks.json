@@ -1,0 +1,65 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Build kickass example1.asm",
+			"command": "/usr/bin/java",
+			"args": [
+				"-jar",
+				"/Applications/KickAssembler/KickAss.jar",
+				"-odir",
+				"./bin",
+				"-log",
+				"buildlog.txt",
+				"-showmem",
+				"-debugdump",
+				"-vicesymbols",
+				"example1.asm"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			}
+		},
+		{
+			"type": "shell",
+			"label": "Build kickass example2.asm",
+			"command": "/usr/bin/java",
+			"args": [
+				"-jar",
+				"/Applications/KickAssembler/KickAss.jar",
+				"-odir",
+				"./bin",
+				"-log",
+				"buildlog.txt",
+				"-showmem",
+				"-debugdump",
+				"-vicesymbols",
+				"example2.asm"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			}
+		},
+		{
+			"type": "shell",
+			"label": "Build sprite1.asm",
+			"command": "/usr/bin/java",
+			"args": [
+				"-jar",
+				"/Applications/KickAssembler/KickAss.jar",
+				"-odir",
+				"./bin",
+				"-log",
+				"buildlog.txt",
+				"-showmem",
+				"-debugdump",
+				"-vicesymbols",
+				"sprite1.asm"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			}
+		}
+	]
+}

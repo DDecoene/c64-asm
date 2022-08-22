@@ -1,0 +1,18 @@
+Output dir: /Users/dennis/Documents/Dev/c64-asm/./bin
+parsing
+flex pass 1
+flex pass 2
+flex pass 3
+Output pass
+Writing prg file: example2.prg
+
+Memory Map
+----------
+Default-segment:
+  $0801-$080c Basic
+  $080e-$080d Basic End
+  $0810-$0820 Main Code
+  $2000-$203f Sprite 128
+
+Writing Vice symbol file: example2.vs
+Writing Symbol file: example2.sym

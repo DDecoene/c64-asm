@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"configurations": [
+		
+		{
+			"type": "kickassembler",
+			"request": "launch",
+			"name": "Debug kickass example1.asm file",
+			"program": "${workspaceFolder}/example1.asm",
+			"binDirectory": "${workspaceFolder}/bin",
+			"preLaunchTask": "Build kickass example1.asm"
+		},
+		{
+			"type": "kickassembler",
+			"request": "launch",
+			"name": "Debug kickass example2.asm file",
+			"program": "${workspaceFolder}/example2.asm",
+			"binDirectory": "${workspaceFolder}/bin",
+			"preLaunchTask": "Build kickass example2.asm"
+		}
+	]
+}
