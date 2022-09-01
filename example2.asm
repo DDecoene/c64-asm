@@ -58,24 +58,24 @@ irq1:
 
 .macro CheckInput(){
 CheckUp:lda #UpMask
-        bit Joy2Reg //; is this mask present in the joystick register?
+        bit Joy1Reg //; is this mask present in the joystick register?
         bne CheckRight //; if not, check next 'button'
         Joy(0)
 CheckRight:lda #RightMask
-        bit Joy2Reg
+        bit Joy1Reg
         bne CheckDown
         Joy(3)
 CheckDown:lda #DownMask
-        bit Joy2Reg
+        bit Joy1Reg
         bne CheckLeft
         Joy(1)
 CheckLeft:lda #LeftMask
-        bit Joy2Reg
+        bit Joy1Reg
         bne CheckFire
         Joy(2)
 CheckFire:
         lda #FireMask
-        bit Joy2Reg
+        bit Joy1Reg
         bne unPressFire //; if fire is already pressed last frame...
         Joy(4)
         jmp endCheckInput

@@ -17,6 +17,14 @@
 			"program": "${workspaceFolder}/example2.asm",
 			"binDirectory": "${workspaceFolder}/bin",
 			"preLaunchTask": "Build kickass example2.asm"
+		},
+		{
+			"type": "kickassembler",
+			"request": "launch",
+			"name": "Debug scrolltext",
+			"program": "${workspaceFolder}/scrolltext.asm",
+			"binDirectory": "${workspaceFolder}/bin",
+			"preLaunchTask": "Build scrolltext.asm"
 		}
 	]
 }

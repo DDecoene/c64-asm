@@ -60,6 +60,26 @@
 			"options": {
 				"cwd": "${workspaceFolder}"
 			}
+		},
+		{
+			"type": "shell",
+			"label": "Build scrolltext.asm",
+			"command": "/usr/bin/java",
+			"args": [
+				"-jar",
+				"/Applications/KickAssembler/KickAss.jar",
+				"-odir",
+				"./bin",
+				"-log",
+				"buildlog.txt",
+				"-showmem",
+				"-debugdump",
+				"-vicesymbols",
+				"scrolltext.asm"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			}
 		}
 	]
 }
